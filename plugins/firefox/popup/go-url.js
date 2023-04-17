@@ -17,3 +17,6 @@ document.getElementById('goUrlForm').addEventListener('submit', function (e) {
     window.close();
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {   document.getElementById('goUrlSlug').focus();
+})

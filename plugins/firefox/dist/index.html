@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Urls Options</title>
+    
+    
+  <script type="module" crossorigin src="/assets/main-4a9671ef.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="stylesheet" href="/assets/index-a035b8bc.css">
+</head>
+
+<body>
+    <main class="px-[10%] pt-6">
+        <h1 class="text-white text-3xl mb-4">Go Urls Options</h1>
+        <p>This is where you can set the options for using go urls.</p>
+        <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+        <form id="goUrlSettings" class="my-4">
+            <input class="input input-secondary" type="text" placeholder="Root Url" id="rootUrl" name="rootUrl">
+            <input class="btn btn-primary" type="submit" value="Save Options">
+        </form>
+        <form id="addNewRoute">
+            <div class="flex flex-row mb-4">
+                <input class="input input-secondary" type="text" name="key" placeholder="Key">
+                <input class="input input-secondary" type="text" name="url" placeholder="Url">
+            </div>
+            <input class="btn btn-primary" type="submit" value="Add New Route">
+        </form>
+    </main>
+</body>
+
+</html>

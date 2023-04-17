@@ -5,12 +5,13 @@
     <link rel="stylesheet" href="./go-url.css">
   </head>
   <body>
-    <div id="goUrlPopup">
-      <form id="goUrlForm">
-        <input type="text" name="slug" placeholder="Slug...">
-        <input type="submit" value="Goto Url" class="button">
-      </form>
-    </div>
-    <script src="./go-url.js"></script>
+  <main class="w-96">
+    <form id="goUrlForm" class="flex flex-col p-2">
+      <input type="text" class="input input-bordered" placeholder="Url Slug" name="slug" id="goUrlSlug" />
+      <input type="submit" value="Go to" class="btn btn-primary mt-4 w-6/12">
+    </form>
+  </main>
+
+    <script type="module" src="./go-url.js"></script>
   </body>
 </html>
