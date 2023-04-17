@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Custom Go Urls",
+  "description": "Custom Go Urls",
+  "version": "0.1",
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "storage"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{c0e0b0a0-0b0c-11e9-9c5a-2a2ae2dbcce4}"
+    }
+  },
+
+  "options_ui": {
+    "page": "index.html",
+    "open_in_tab": true
+  },
+  
+  "browser_action": {
+    "default_icon": "go-url-icon.png",
+    "default_title": "GoUrl",
+    "default_popup": "popup/go-url-popup.html"
+  }
+}

@@ -1,5 +1,7 @@
 import Alpine from 'alpinejs'
  
+console.log("This ran")
+
 window.Alpine = Alpine
  
 Alpine.start()
