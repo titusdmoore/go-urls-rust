@@ -14,12 +14,11 @@
     <main class="px-[10%] pt-6">
         <h1 class="text-white text-3xl mb-4">Go Urls Options</h1>
         <p>This is where you can set the options for using go urls.</p>
-        <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
         <form id="goUrlSettings" class="my-4">
             <input class="input input-secondary" type="text" placeholder="Root Url" id="rootUrl" name="rootUrl">
             <input class="btn btn-primary" type="submit" value="Save Options">
         </form>
-        <form id="addNewRoute">
+            <form id="addNewRoute" x-cloak x-data="linksForm()">
             <div class="flex flex-row mb-4">
                 <input class="input input-secondary" type="text" name="key" placeholder="Key">
                 <input class="input input-secondary" type="text" name="url" placeholder="Url">

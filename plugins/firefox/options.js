@@ -2,6 +2,20 @@ import Alpine from 'alpinejs'
  
 window.Alpine = Alpine
  
+Alpine.data('linksForm', () => ({
+    links: [],
+    loading: true,
+
+    init() {
+        console.log('init')
+        fetch('localhost:4545/links').then(response => response.json()).then(response => {
+            console.log(response)
+            this.links = response
+            this.loading = false
+        })
+    }
+}))
+
 Alpine.start()
 
 document.getElementById('goUrlSettings').addEventListener('submit', function(e) {
